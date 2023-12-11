@@ -18,5 +18,5 @@ int main() {
         printf("Обидва числа: %d та %d\n", numbers[0], numbers[1]);
     }
 
-    return 0;
+    return 0; 
 }
