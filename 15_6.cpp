@@ -5,7 +5,7 @@ int main() {
     int max = m[0];
     int min = m[0];
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 10; ++i) {
         if (m[i] > max) {
             max = m[i];
         } else {
