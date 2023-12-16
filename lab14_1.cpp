@@ -3,20 +3,19 @@
 
 int main() {
     int array[5];
-    int *ptr = array;
-    int *maxPtr, *minPtr;
+    int *ptr = array;     //оголошення масиву
+    int *maxPtr, *minPtr; //змінні для пошуку мінімального значення
 
     printf("Введіть 5 чисел:\n");
-
-    for (int i = 0; i < sizeof(array) / sizeof(array[0]); ++i) {
+    for (int i = 0; i < sizeof(array) / sizeof(array[0]); ++i) {   //заповнення масиву
         scanf("%d", &ptr[i]);
     }
 
-    
+    //Пошук максимального та мінімального значення
     maxPtr = minPtr = ptr;
     for (int i = 0; i < sizeof(array) / sizeof(array[0]); ++i) {
         if (ptr[i] > *maxPtr) {
-            maxPtr = &ptr[i];
+            maxPtr = &ptr[i];               
         } else if (ptr[i] < *minPtr) {
             minPtr = &ptr[i];
         }
