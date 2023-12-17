@@ -22,7 +22,7 @@ int main() {
     }
 
     
-    int distance = maxPtr - minPtr;
+    int distance = abs(maxPtr - minPtr);
 
     printf("Максимальний елемент: %d (позиція %ld)\n", *maxPtr, maxPtr - ptr);
     printf("Мінімальний елемент: %d (позиція %ld)\n", *minPtr, minPtr - ptr);
